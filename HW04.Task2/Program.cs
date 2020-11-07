@@ -14,6 +14,13 @@ namespace HW04.Task2
             b = int.Parse(Console.ReadLine());
             Console.WriteLine("Сумма равна:{0}", a + b);
             Console.ReadKey();
+
+            int sum = a + b;
+            if (sum == 15)
+            {
+                string message = "Right!";
+                Console.WriteLine(message);
+            }
         }
                 
     } 
