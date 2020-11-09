@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using System.IO.MemoryMappedFiles;
+using System.Reflection;
 
 namespace HW04.Task2
 {
@@ -7,21 +9,95 @@ namespace HW04.Task2
     {
         static void Main(string[] args)
         {
-            int a, b = 0;
-            Console.WriteLine("Введите первое число:");
-            a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введите второе число:");
-            b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Сумма равна:{0}", a + b);
-            Console.ReadKey();
-
+            Alg();
+            Algcontinue();
+            Algcontin();
+            Algcon();
+        }
+        static void Alg()
+        {
+            Console.WriteLine("First number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Second number : ");
+            int b = Convert.ToInt32(Console.ReadLine());
             int sum = a + b;
-            if (sum == 15)
+            Console.WriteLine("Sum: " + sum);
+            Console.ReadLine();
+
+        }
+        static void Algcontinue()
+        {
+            Console.WriteLine("First number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Second number : ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int sum = a + b;
+            Console.WriteLine("Sum: " + sum);
+            Console.ReadLine();
+
+            if (sum == 10)
             {
-                string message = "Right!";
-                Console.WriteLine(message);
+                Console.WriteLine("Right!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong");
             }
         }
-                
-    } 
+        static void Algcontin()
+        {
+            Console.WriteLine("First number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Second number : ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int sum = a + b;
+            Console.WriteLine("Sum: " + sum);
+            Console.ReadLine();
+
+            if (sum == 10)
+            {
+                Console.WriteLine("Right!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong");
+            }
+            if (sum <= 10)
+            {
+                Console.WriteLine("Right!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong");
+            }
+        }
+        static void Algcon()
+        {
+            Console.WriteLine("First number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Second number : ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int sum = a + b;
+            Console.WriteLine("Sum: " + sum);
+            Console.ReadLine();
+
+            if (sum == 10)
+            {
+                Console.WriteLine("Right!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong");
+            }
+            if (sum <= 10)
+            {
+                Console.WriteLine("Right!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong");
+            }
+
+        }
+    }
 }
