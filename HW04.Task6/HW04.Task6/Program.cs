@@ -6,6 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            
             int d = 0;
             for (char i = 'z'; i >= 'a'; i--)
             {
@@ -13,6 +14,13 @@ namespace ConsoleApp1
                 d--;
             }
             Console.ReadKey(true);
+            
+
+            //Another way
+            for (char alph = 'z'; alph > '`'; alph--)
+            {
+                Console.WriteLine($"Alphabet bachwards {alph}");
+            }
         }
     }
 }
